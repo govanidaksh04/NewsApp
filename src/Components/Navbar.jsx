@@ -1,5 +1,6 @@
 import './Navbar.css';
 
+// This is a Navbar.
 const Navbar = ({setCategory}) => {
     return (
         <>
