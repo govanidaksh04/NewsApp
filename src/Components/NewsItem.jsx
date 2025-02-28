@@ -1,4 +1,5 @@
 import defimage from '../Assets/news.jpeg';
+import PropTypes from 'prop-types';
 
 const NewsItem = ({title, description, src, image}) => {
     return(
@@ -12,5 +13,12 @@ const NewsItem = ({title, description, src, image}) => {
         </div>
     )
 }
+
+NewsItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    src: PropTypes.string.isRequired,
+    image: PropTypes.string
+};
 
 export default NewsItem;
